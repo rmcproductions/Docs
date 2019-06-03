@@ -1,0 +1,387 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#getting-help" class="toc-h1 toc-link" data-title="Getting Help">Getting Help</a>
+          </li>
+          <li>
+            <a href="#relationships" class="toc-h1 toc-link" data-title="Relationships">Relationships</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#relationship-object" class="toc-h2 toc-link" data-title="Relationship Object">Relationship Object</a>
+                  </li>
+                  <li>
+                    <a href="#relationship-type-object" class="toc-h2 toc-link" data-title="Relationship Type Object">Relationship Type Object</a>
+                  </li>
+                  <li>
+                    <a href="#rest-api" class="toc-h2 toc-link" data-title="REST API">REST API</a>
+                  </li>
+                  <li>
+                    <a href="#gateway" class="toc-h2 toc-link" data-title="Gateway">Gateway</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>This is the OpenCord API Documentation! We strive for documenting everything Discord isn&#39;t documenting in
+their <a href="https://github.com/discordapp/discord-api-docs">official docs</a>.</p>
+
+<p>All of our <a href="https://github.com/opencordapp/docs">documentation is on GitHub</a> and we &lt;3 corrections and improvements!</p>
+
+<p>Just for your interest, we&#39;re not copying documentation from <a href="https://discordapp.com/developers/docs/">here</a>.
+Take this page as a supplement to the official docs. If something isn&#39;t stated here, that means all the important
+aspects of this topic are already documented well enough.</p>
+<h1 id='getting-help'>Getting Help</h1>
+<p>If you think you&#39;re experiencing a bug with our API or would like to report incorrect documentation, please
+<a href="https://github.com/opencordapp/docs/issues">create an issue</a> for it on GitHub.</p>
+
+<p>Please note that any contents you cannot find in the official API docs aren&#39;t supposed to be publicly exposed.
+Neither the people over at Discord API, nor the people at OpenCord are going to help you if you&#39;re stuck with integrating
+anything from here into your applications as you shouldn&#39;t actually do that.</p>
+
+<p>Discord doesn&#39;t really care if you&#39;re wrangling undocumented stuff (like voice receive) into working - but don&#39;t expect
+any assistance and stuff may break at any time. You have been warned.</p>
+<h1 id='relationships'>Relationships</h1>
+<p>The relationship between two user accounts.</p>
+
+<aside class="notice">
+Bot accounts cannot use any of the endpoints/won't receive any of the gateway events
+listed down below.
+</aside>
+<h3 id='relationship-object'>Relationship Object</h3><h6 id='relationship-structure'>Relationship Structure</h6>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>snowflake</td>
+<td>the user id the relationship corresponds to</td>
+</tr>
+<tr>
+<td>type</td>
+<td><a href="#relationship-type-object">relationship type</a></td>
+<td>type of relationship</td>
+</tr>
+<tr>
+<td>user?</td>
+<td><a href="https://discordapp.com/developers/docs/resources/user#user-object">User</a></td>
+<td>the other user in the relationship</td>
+</tr>
+</tbody></table>
+<h3 id='relationship-type-object'>Relationship Type Object</h3><h6 id='relationship-type-structure'>Relationship Type Structure</h6>
+<table><thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Friend</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Blocked</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Incoming Friend Request</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Outgoing Friend Request</td>
+</tr>
+</tbody></table>
+<h2 id='rest-api'>REST API</h2>
+<p>The HTTP endpoints corresponding to relationships.</p>
+<h3 id='get-user-relationships'>Get User Relationships</h3><h6 id='get-users-me-user-relationships'><code>GET /users/[@me][user]/relationships</code></h6>
+<p>Returns an array of <a href="#relationship-object">relationship</a> objects for your user account.</p>
+<h3 id='create-user-relationship-from-username'>Create User Relationship from Username</h3><h6 id='post-users-me-user-relationships'><code>POST /users/[@me][user]/relationships</code></h6>
+<p>Creates a relationship with the given user.</p>
+<h6 id='json-parameters'>JSON Parameters</h6>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>the username of the user</td>
+</tr>
+<tr>
+<td>discriminator</td>
+<td>string</td>
+<td>the discriminator of the user</td>
+</tr>
+</tbody></table>
+<h3 id='create-user-relationship-from-id'>Create User Relationship from ID</h3><h6 id='put-users-me-user-relationships-user-id-user'><code>PUT /users/[@me][user]/relationships/[{user.id}][user]</code></h6>
+<p>Creates a relationship to the user with the given ID. Returns <code>204</code> on success.</p>
+<h6 id='json-parameters-2'>JSON Parameters</h6>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>number</td>
+<td>the type of relationship to create</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<h3 id='remove-user-relationship'>Remove User Relationship</h3><h6 id='delete-users-me-user-relationships-user-id-user'><code>DELETE /users/[@me][user]/relationships/[{user.id}][user]</code></h6>
+<p>Removes any relationship between you and the user. Returns <code>204</code> on success.</p>
+<h3 id='get-mutual-friends'>Get Mutual Friends</h3><h6 id='get-users-user-id-user-relationships'><code>GET /users/[{user.id}][user]/relationships</code></h6>
+<p>Returns a list of <a href="https://discordapp.com/developers/docs/resources/user#user-object">user objects</a> denoting the mutual friends between you and the
+other user.</p>
+<h2 id='gateway'>Gateway</h2>
+<p>Gateway events corresponding to relationships.</p>
+<h3 id='relationship_add'><code>RELATIONSHIP_ADD</code></h3>
+<p>Indicates a new relationship has been created.</p>
+
+<p>Contains a <a href="#relationship-object">relationship object</a> in the <code>d</code> field.</p>
+<h3 id='relationship_remove'><code>RELATIONSHIP_REMOVE</code></h3>
+<p>Indicates a relationship has been destroyed.</p>
+
+<p>Contains a <a href="#relationship-object">partial relationship object</a> in the <code>d</code> field.</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
