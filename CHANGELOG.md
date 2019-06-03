@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 2.3.1-opencord
+
+*June 6, 2019*
+
+**This isn't an official release! These modifications are only meant for the OpenCord API Documentation.**
+
+- Update Ruby bundle version in `Gemfile.lock`
+- Replace `source/images/logo.png`
+- Remove contents of the `source/includes` directory
+- Change default font in `source/stylesheets/_normalize.scss`
+- Change colors in `source/stylesheets/_variables.scss` for dark mode
+- Stub out `source/index.html.md` as OpenCord is not about kittens
+
 ## Version 2.3.1
 
 *July 5, 2018*
